@@ -5,7 +5,7 @@ export default function Command(props: LaunchProps) {
 
   if (!Number.isNaN(bill) && bill >= 0 && !Number.isNaN(tip) && tip >= 0 && !Number.isNaN(people) && people > 0) {
     return (
-      <List navigationTitle="Search Beers" searchBarPlaceholder="Search Information...">
+      <List navigationTitle="Calculate Tip" searchBarPlaceholder="Search Information...">
         <List.Section title="Inputted Values">
           <List.Item title={`Bill`} icon={Icon.Receipt} accessories={[{ text: `${bill}` }]} />
           <List.Item title={`Tip %`} icon={Icon.Coin} accessories={[{ text: `${tip}%` }]} />
